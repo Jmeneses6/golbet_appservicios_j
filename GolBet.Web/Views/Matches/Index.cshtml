@@ -4,7 +4,6 @@
 @{
     ViewData["Title"] = "Partidos";
     
-    // Variables para mantener el estado de la búsqueda y los filtros
     var current = (MatchStatus?)ViewBag.CurrentStatus;
     var currentSearch = (string?)ViewBag.CurrentSearch;
 }
@@ -56,7 +55,7 @@
 {
     <div class="text-center mt-5">
         <h4 class="text-muted fw-normal mb-3">No hay partidos para «@currentSearch»</h4>
-        <a asp-action="Index" class="btn btn-secondary text-white">Volver a la cartelera de partidos</a>
+        <a asp-action="Index" class="btn btn-success text-white">Volver a la cartelera de partidos</a>
     </div>
 }
 else
